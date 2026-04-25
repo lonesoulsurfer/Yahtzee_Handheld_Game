@@ -1,5 +1,9 @@
 # Yahtzee - Handheld Game with Machine Learning
 
+YouTube - https://youtu.be/DMBQGAXjRF4
+
+Instructabled - TBA
+
 My favourite types of games are ones that require a little bit of skill, and a little bit of luck — and Yahtzee is definitely one of those games.
 
 So in my continuing journey in all things microcontrollers, I decided to build my own electronic Yahtzee handheld game. In this build I used a Raspberry Pi Zero which is an ultra-compact version of the Raspberry Pi Pico.
