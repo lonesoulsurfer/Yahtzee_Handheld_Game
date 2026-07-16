@@ -2,15 +2,9 @@
 
 YouTube - https://youtu.be/DMBQGAXjRF4
 
-Instructabled - TBA
+Instructables - https://www.instructables.com/Yahtzee-Raspberry-Pi-Handheld-Game/
 
-My favourite types of games are ones that require a little bit of skill, and a little bit of luck, and Yahtzee is definitely one of those games.
 
-So in my continuing journey in all things microcontrollers, I decided to build my own electronic Yahtzee handheld game. In this build I used a Raspberry Pi Zero, which is an ultra-compact version of the Raspberry Pi Pico.
-
-The game can be played in either 2 player mode or Player 1 vs the Computer. Initially this seemed relatively straightforward. However, the more I worked on the code, the more I fell down a rabbit hole trying to make the computer (or game engine, as I've been calling it) actually become the best possible player.
-
-I worked with Claude, an AI assistant developed by Anthropic, to develop the code. If you are new to coding and want a place to start, then give Claude a go.
 
 <img src="https://github.com/user-attachments/assets/8ec25d56-e4e9-4fbc-844d-4c83ffc45c60" width="300" alt="EKBK0852" />
 <img src="https://github.com/user-attachments/assets/2868cfb5-dff3-4b64-b821-424fb2c662f9" width="300" alt="MQDH6629" />
