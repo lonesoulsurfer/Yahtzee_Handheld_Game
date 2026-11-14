@@ -6,10 +6,34 @@ Instructables - https://www.instructables.com/Yahtzee-Raspberry-Pi-Handheld-Game
 
 
 
+This is a handheld Yahtzee game with a computer opponent. It uses a Waveshare RP2040-Zero and an ST7789 colour screen. The firmware also includes a Blackjack game.
+
 <img src="https://github.com/user-attachments/assets/8ec25d56-e4e9-4fbc-844d-4c83ffc45c60" width="300" alt="EKBK0852" />
 <img src="https://github.com/user-attachments/assets/09395b5d-c96f-4142-bf45-931f55bf02c9" width="300" alt="RZYY5395" />
 <img src="https://github.com/user-attachments/assets/17aec8ca-5ae5-4455-88a7-85767c115892" width="300" alt="JPOU3428" />
 
+
+---
+
+## What you need
+
+- All parts are in the [parts list](Parts%20List%20(1).pdf).
+- The schematic is [Yahtzee - Schematic.png](Yahtzee%20-%20Schematic.png).
+- The Gerber files for the PCB and the panels are in [Gerber_Files](Gerber_Files/). You can send them to a PCB maker.
+
+## Upload the firmware
+
+1. Download this repository. Click **Code → Download ZIP**, then extract the ZIP file.
+2. In the Arduino IDE, install the board package **Raspberry Pi Pico/RP2040** by Earle Philhower.
+3. In the **Library Manager**, install **Adafruit GFX Library** and **Adafruit ST7735 and ST7789 Library**.
+4. Open `Yahtzee_v2/Yahtzee_v2.ino` (recommended), or `Yahtzee_v1/Yahtzee_v1.ino`.
+5. Connect the RP2040-Zero to your computer with a USB cable.
+6. In the **Tools** menu, set **Board** to **Waveshare RP2040 Zero**, and set **Port**.
+7. Click **Upload**.
+
+For V2, the file `vtable.h` must be in the same folder as the sketch. It is already there.
+
+More detail about the computer opponent is in [YAHTZEE_AI.md](YAHTZEE_AI.md).
 
 ---
 
@@ -70,3 +94,16 @@ A few things didn't need reinventing, so V2 keeps them as is:
 ## A Note on God Mode / Difficulty
 
 V1's Normal / Hard / God Mode difficulty levels changed how aggressively the game engine would reroll. In V2, difficulty no longer changes how the AI plays. The V-brain always plays the mathematically optimal move, since there's no such thing as a "more optimal than optimal" setting. It is still beatable, since Yahtzee has a meaningful luck component, but you're playing against the best possible strategy on every roll.
+
+---
+
+## Support
+
+Do you like this project? You can support my work on [GitHub Sponsors](https://github.com/sponsors/lonesoulsurfer).
+
+## Licence
+
+- **Code:** [MIT License](LICENSE). You can use, change and sell it.
+- **Hardware** (PCB, panels and Gerber files): [CERN Open Hardware Licence v2, Strongly Reciprocal](LICENSE-HARDWARE). You can make, change and sell boards. If you share or sell a changed design, you must also share the changed design files under the same licence.
+
+Copyright (c) 2026 Marcus (lonesoulsurfer).
